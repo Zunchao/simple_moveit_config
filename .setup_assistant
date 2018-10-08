@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: simple_robot_description
+    relative_path: urdf/simple_robot.urdf.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/simple_robot.srdf
+  CONFIG:
+    author_name: zheng
+    author_email: zunchao.zheng@student.kit.edu
+    generated_timestamp: 1538763834

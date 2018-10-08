@@ -1,0 +1,21 @@
+#ros_control_namespace: /simple_robot
+controller_list:
+  - name: /simple_robot/arm_contoller
+    action_ns: position_controllers
+    type: JointTrajectoryController
+    default: true
+    joints:
+      - arm_1_joint
+      - arm_2_joint
+      - arm_3_joint
+      - arm_4_joint
+      - arm_5_joint
+      - arm_6_joint
+      - arm_7_joint
+      - arm_8_joint
+  - name: /simple_robot/wheel_velocity_controller
+    action_ns: velocity_controllers
+    type: JointTrajectoryController
+    joints:
+      - wheel_right_joint
+      - wheel_left_joint
